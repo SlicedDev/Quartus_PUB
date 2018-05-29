@@ -1,4 +1,4 @@
-[![GitHub license](https://img.shields.io/github/license/ReyKoxha/nodebb-webview.svg)](https://github.com/ReyKoxha/Quartus_PUB/blob/master/LICENSE.md)
+[![GitHub license](https://img.shields.io/github/license/ReyKoxha/Quartus_PUB.svg)](https://github.com/ReyKoxha/Quartus_PUB/blob/master/LICENSE.md)
 
 ## About
 Quartus is a very simple and plain CS:GO cheat coded in VB.NET.
