@@ -1,3 +1,5 @@
+[![GitHub license](https://img.shields.io/github/license/ReyKoxha/nodebb-webview.svg)](https://github.com/ReyKoxha/Quartus_PUB/blob/master/LICENSE.md)
+
 ## About
 Quartus is a very simple and plain CS:GO cheat coded in VB.NET.
 The majority of this code is C+P, uncommented and unoptimized.
@@ -11,7 +13,8 @@ Compiling requires Visual Studio and is targeted for .NET 4.7.1.
 
 ## F.A.Q.
 #### Q.: How do I use the HWID lock?
-#### A.: Simply create a MSSQL Database (Azure). The table should contain usernames, password (hashed as MD5) and the HWID. Alternatively you can just delete the Login.vb and let the program start from the Main.vb.
+#### A.: Simply create a MSSQL Database (Azure). The table should contain usernames, passworda (hashed as MD5) and the HWIDs. Alternatively you can just delete the Login.vb and let the program start from the Main.vb. I also uploaded a HWID generator just in case you are too lazy to make one:
+https://github.com/ReyKoxha/Quartus_HWID
 
 -------------------------------------------------------------------
 
@@ -34,6 +37,9 @@ Compiling requires Visual Studio and is targeted for .NET 4.7.1.
 ![](https://i.imgur.com/1EsBys6.png)
 ![](https://i.imgur.com/OhNwimx.png)
 ![](https://i.imgur.com/VxczxEn.png)
+
+## Video
+[![QUARTUS](https://img.youtube.com/vi/SgdaKaE9fi4/0.jpg)](https://www.youtube.com/watch?v=SgdaKaE9fi4)
 
 ## Credits
 si0n for his base
