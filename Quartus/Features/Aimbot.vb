@@ -160,7 +160,7 @@ Public Class CAimbot
 
                             Dim Ang As New Vec3(0, 0, 0)
 
-                            If Rage = 1 Then
+                            If My.Settings.RageAim = 1 Then
                                 If _ID1 Then
                                     Ang = SmoothAng(ClampAngle(CalcAngle(pLocalPlayer.OriginVec, Target.BonePosition(My.Settings.AimSpotPistols), pLocalPlayer.PunchAngle, pLocalPlayer.ViewOffset)), My.Settings.SmoothPistols)
                                 ElseIf _ID2 Then
@@ -168,7 +168,7 @@ Public Class CAimbot
                                 ElseIf _ID3 Or _ID4 Then
                                     Ang = SmoothAng(ClampAngle(CalcAngle(pLocalPlayer.OriginVec, Target.BonePosition(My.Settings.AimSpotRifles), pLocalPlayer.PunchAngle, pLocalPlayer.ViewOffset)), My.Settings.SmoothRifles)
                                 End If
-                            ElseIf Rage = 0 Then
+                            ElseIf My.Settings.RageAim = 0 Then
                                 If Target.SpottedByMask And pLocalPlayer.ShotsFired < 1 And _ID1 Then
                                     Ang = SmoothAng(ClampAngle(CalcAngle(pLocalPlayer.OriginVec, Target.BonePosition(My.Settings.AimSpotPistols), pLocalPlayer.PunchAngle, pLocalPlayer.ViewOffset)), My.Settings.SmoothPistols)
                                 ElseIf Target.SpottedByMask And pLocalPlayer.ShotsFired < 1 And _ID2 Then
