@@ -163,13 +163,13 @@ Public Class Login
         Dim SQLHWID As String
 
         Try
-            myConnectionString = "Server=tcp :somemssqlserver.database.windows.net, 1433;" _
-            & "Initial Catalog=database_name;" _
+            myConnectionString = "Server=tcp :sql2.freemysqlhosting.net, 3306;" _
+            & "Initial Catalog=sql2241424;" _
             & "Persist Security Info=False;" _
-            & "User ID=database_user;" _
-            & "Password=" & AESD("ENCRYPTEDTEXT", "YOURKEY") & ";" _
+            & "User ID=sql2241424;" _
+            & "Password=aL8%yB6%"; _
             & "MultipleActiveResultSets = False;" _
-            & "Encrypt=True;" _
+              & "Encrypt=False;" _
             & "TrustServerCertificate=False;" _
             & "Connection Timeout=30;"
 
@@ -180,7 +180,7 @@ Public Class Login
             cmd.CommandText = "Select username,
                                         passwd,
                                           hwid
-                               FROM   logins
+                               FROM   users
                                WHERE  (username = '" & UsernameBox.Text & "')
                                AND            (passwd = '" & HashedPass & "')
                                AND              (hwid = '" & hashedHWID & "')"
